@@ -1,6 +1,23 @@
 .section-features {
-    &__textbox {
-        @include text-box;
-        padding-bottom: 5rem;
+    padding-bottom: 10rem;
+  &__textbox {
+    @include text-box;
+    padding-bottom: 5rem;
+  }
+
+  &__more {
+    @include text-box;
+    margin: 0 2.5rem;
+    padding-bottom: 5rem;
+    background-color: $color-primary-dark;
+    position: relative;
+    z-index: -10;
+    &::before {
+      content: url("/images/bg-pattern-how-we-work-mobile.svg");
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: -1;
     }
+  }
 }
