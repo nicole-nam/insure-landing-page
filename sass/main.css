@@ -1,0 +1,60 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  line-height: 1.2;
+}
+
+.heading-primary--main {
+  letter-spacing: 1.5px;
+  color: #fafafa;
+  font-family: "DM Serif Display", serif;
+  font-weight: 700;
+  display: block;
+  padding-bottom: 1.5rem;
+  font-size: 4rem;
+}
+
+.heading-primary--sub {
+  color: #fafafa;
+  font-family: "Karla", sans-serif;
+  font-size: 1.2rem;
+  padding: 0rem 1rem;
+  font-weight: 400;
+}
+
+.header {
+  background-color: #2d2640;
+}
+
+.header__img {
+  max-width: 100%;
+}
+
+.header__text-box {
+  padding: 5rem 2.5rem;
+  text-align: center;
+}
+
+.navigation__logo-box {
+  display: inline-block;
+  width: 50%;
+}
+
+.navigation__logo {
+  width: 12rem;
+  padding: 2rem;
+}
+/*# sourceMappingURL=main.css.map */

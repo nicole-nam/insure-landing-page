@@ -1,0 +1,11 @@
+.heading-primary{
+  
+    &--main{
+        @include header-text;
+        font-size: 4rem;
+    }
+    &--sub{
+@include body-text
+
+    }
+}
