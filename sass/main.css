@@ -84,7 +84,7 @@ body {
   font-weight: 700;
   letter-spacing: 1.2px;
   font-size: 1.3rem;
-  padding-bottom: 3rem;
+  padding: 2rem 0 3rem;
 }
 
 .u-center-text {
@@ -199,7 +199,7 @@ body {
 .footer__link-item:link, .footer__link-item:visited {
   font-family: "Karla", sans-serif;
   text-decoration: none;
-  color: #2b272f;
+  color: #2d2640;
   font-weight: 700;
   font-size: 1.2rem;
   letter-spacing: 1.2px;
