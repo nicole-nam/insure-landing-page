@@ -1,14 +1,28 @@
 .header {
-    background-color: $color-primary-dark;
-    &__img-box{
+  z-index: -10;
+  position: relative;
 
-
-    }
-    &__img{
-        max-width: 100%;
-    }
-    &__text-box {
-        padding: 5rem 2.5rem;
-        text-align: center;
-    }
+  &::before {
+    content: url("/images/bg-pattern-intro-left-mobile.svg");
+    position: absolute;
+    top: 50%;
+    z-index: -1;
+  }
+  &::after {
+    content: url("/images/bg-pattern-intro-right-mobile.svg");
+    position: absolute;
+    top: 83%;
+    right: 0;
+    z-index: -1;
+  }
+  background-color: $color-primary-dark;
+  &__img-box {
+  }
+  &__img {
+    width: 100%;
+    height: auto;
+  }
+  &__text-box {
+    @include text-box;
+  }
 }

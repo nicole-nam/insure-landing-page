@@ -1,11 +1,24 @@
-.heading-primary{
-  
-    &--main{
-        @include header-text;
-        font-size: 4rem;
-    }
-    &--sub{
-@include body-text
+.heading-primary {
+  &--main {
+    @include header-text;
+    font-size: 4rem;
+  }
+  &--sub {
+    @include body-text;
+  }
+}
+.heading-secondary {
+    @include header-text;
+    color: $color-secondary-dark;
+    font-size: 3.5rem;
+    font-weight: 400;
 
+    &::before {
+        content: "";
+        display: block;
+        margin: 0 auto;
+        width: 35%;
+        margin-bottom: 3rem;
+        border-bottom: 1px solid rgba($color-violet-light, .4);
     }
 }

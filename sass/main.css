@@ -35,6 +35,31 @@ body {
   font-weight: 400;
 }
 
+.heading-secondary {
+  letter-spacing: 1.5px;
+  color: #fafafa;
+  font-family: "DM Serif Display", serif;
+  font-weight: 700;
+  display: block;
+  padding-bottom: 1.5rem;
+  color: #2b272f;
+  font-size: 3.5rem;
+  font-weight: 400;
+}
+
+.heading-secondary::before {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 35%;
+  margin-bottom: 3rem;
+  border-bottom: 1px solid rgba(131, 125, 135, 0.4);
+}
+
+.u-center-text {
+  text-align: center !important;
+}
+
 .btn:link, .btn:visited {
   display: inline-block;
   padding: 0.5rem 1rem;
@@ -47,16 +72,39 @@ body {
   text-transform: uppercase;
 }
 
+.section-features__textbox {
+  padding: 8rem 2.5rem;
+  text-align: center;
+}
+
 .header {
+  z-index: -10;
+  position: relative;
   background-color: #2d2640;
 }
 
+.header::before {
+  content: url("/images/bg-pattern-intro-left-mobile.svg");
+  position: absolute;
+  top: 50%;
+  z-index: -1;
+}
+
+.header::after {
+  content: url("/images/bg-pattern-intro-right-mobile.svg");
+  position: absolute;
+  top: 83%;
+  right: 0;
+  z-index: -1;
+}
+
 .header__img {
-  max-width: 100%;
+  width: 100%;
+  height: auto;
 }
 
 .header__text-box {
-  padding: 5rem 2.5rem;
+  padding: 8rem 2.5rem;
   text-align: center;
 }
 
