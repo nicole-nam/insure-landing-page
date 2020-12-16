@@ -1,0 +1,19 @@
+.footer {
+  background-color: $color-body;
+
+  &__logo-box {
+    @include text-box;
+    padding-bottom: 2rem;
+  }
+  &__icon-box {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__icon {
+    &:not(:last-child) {
+      padding-right: 1rem;
+    }
+  }
+}

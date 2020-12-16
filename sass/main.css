@@ -117,6 +117,30 @@ body {
   z-index: -1;
 }
 
+.footer {
+  background-color: #fafafa;
+}
+
+.footer__logo-box {
+  padding: 8rem 2.5rem;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.footer__icon-box {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer__icon:not(:last-child) {
+  padding-right: 1rem;
+}
+
 .row {
   padding: 8rem 2.5rem;
   text-align: center;
