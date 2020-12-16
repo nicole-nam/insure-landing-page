@@ -35,3 +35,15 @@
   line-height: 1.7;
 
 }
+
+.footer-title {
+  @include body-text;
+  color: $color-violet-light;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  font-size: 1.3rem;
+  padding-bottom: 3rem;
+
+}
+

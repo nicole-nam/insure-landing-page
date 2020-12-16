@@ -73,6 +73,20 @@ body {
   line-height: 1.7;
 }
 
+.footer-title {
+  color: #fafafa;
+  font-family: "Karla", sans-serif;
+  font-size: 1.2rem;
+  padding: 0rem .5rem;
+  font-weight: 400;
+  color: #837d87;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  font-size: 1.3rem;
+  padding-bottom: 3rem;
+}
+
 .u-center-text {
   text-align: center !important;
 }
@@ -137,8 +151,53 @@ body {
           justify-content: center;
 }
 
+.footer__icon {
+  padding-bottom: 2rem;
+}
+
 .footer__icon:not(:last-child) {
-  padding-right: 1rem;
+  padding-right: 1.5rem;
+}
+
+.footer__link-box {
+  text-align: center;
+}
+
+.footer__link-box:first-child::before {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  margin-bottom: 3rem;
+  border-bottom: 1px solid rgba(131, 125, 135, 0.4);
+}
+
+.footer__list-item:last-child {
+  padding-bottom: 3rem;
+}
+
+.footer__list-item:not(:first-child) {
+  padding-top: 2rem;
+}
+
+.footer__link-item {
+  display: inline-block;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer__link-item:link, .footer__link-item:visited {
+  font-family: "Karla", sans-serif;
+  text-decoration: none;
+  color: #2b272f;
+  font-weight: 700;
+  font-size: 1.2rem;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
+.footer__link-item:hover {
+  text-decoration: underline;
 }
 
 .row {

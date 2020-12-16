@@ -12,8 +12,49 @@
   }
 
   &__icon {
+    padding-bottom: 2rem;
     &:not(:last-child) {
-      padding-right: 1rem;
+      padding-right: 1.5rem;
+    }
+  }
+
+  &__link-box {
+    text-align: center;
+
+    &:first-child::before {
+      content: "";
+      display: block;
+      margin: 0 auto;
+      width: 80%;
+      margin-bottom: 3rem;
+      border-bottom: 1px solid rgba($color-violet-light, 0.4);
+    }
+  }
+  &__list-item {
+      &:last-child{
+      padding-bottom: 3rem;
+      }
+    &:not(:first-child) {
+      padding-top: 2rem;
+    }
+  }
+
+  &__link-item {
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+
+    &:link,
+    &:visited {
+      font-family: $font-body;
+      text-decoration: none;
+      color: $color-secondary-dark;
+      font-weight: 700;
+      font-size: 1.2rem;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+    }
+    &:hover {
+      text-decoration: underline;
     }
   }
 }
