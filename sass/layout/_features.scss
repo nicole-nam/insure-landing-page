@@ -1,6 +1,6 @@
 .section-features {
-
     &__textbox {
         @include text-box;
+        padding-bottom: 5rem;
     }
 }

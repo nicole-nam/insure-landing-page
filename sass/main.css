@@ -56,6 +56,23 @@ body {
   border-bottom: 1px solid rgba(131, 125, 135, 0.4);
 }
 
+.heading-tertiary {
+  font-size: 2rem;
+  padding: 1rem;
+  color: #2b272f;
+}
+
+.paragraph {
+  color: #fafafa;
+  font-family: "Karla", sans-serif;
+  font-size: 1.2rem;
+  padding: 0rem .5rem;
+  font-weight: 400;
+  padding: 0 4rem 5rem;
+  color: #837d87;
+  line-height: 1.7;
+}
+
 .u-center-text {
   text-align: center !important;
 }
@@ -75,6 +92,13 @@ body {
 .section-features__textbox {
   padding: 8rem 2.5rem;
   text-align: center;
+  padding-bottom: 5rem;
+}
+
+.row {
+  padding: 8rem 2.5rem;
+  text-align: center;
+  padding-top: 0;
 }
 
 .header {

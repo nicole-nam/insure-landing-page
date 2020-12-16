@@ -8,17 +8,30 @@
   }
 }
 .heading-secondary {
-    @include header-text;
-    color: $color-secondary-dark;
-    font-size: 3.5rem;
-    font-weight: 400;
+  @include header-text;
+  color: $color-secondary-dark;
+  font-size: 3.5rem;
+  font-weight: 400;
 
-    &::before {
-        content: "";
-        display: block;
-        margin: 0 auto;
-        width: 35%;
-        margin-bottom: 3rem;
-        border-bottom: 1px solid rgba($color-violet-light, .4);
-    }
+  &::before {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 35%;
+    margin-bottom: 3rem;
+    border-bottom: 1px solid rgba($color-violet-light, 0.4);
+  }
+}
+.heading-tertiary {
+  font-size: 2rem;
+
+  padding: 1rem;
+  color: $color-secondary-dark;
+}
+.paragraph {
+  @include body-text;
+  padding: 0 4rem 5rem;
+  color: $color-violet-light;
+  line-height: 1.7;
+
 }
