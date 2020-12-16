@@ -31,8 +31,20 @@ body {
   color: #fafafa;
   font-family: "Karla", sans-serif;
   font-size: 1.2rem;
-  padding: 0rem 1rem;
+  padding: 0rem .5rem;
   font-weight: 400;
+}
+
+.btn:link, .btn:visited {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin: 2.5rem;
+  letter-spacing: 2px;
+  color: #fafafa;
+  font-family: "Karla", sans-serif;
+  border: 1px solid #fafafa;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 .header {

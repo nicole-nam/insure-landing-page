@@ -1,0 +1,14 @@
+.btn {
+  &:link,
+  &:visited {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    margin: 2.5rem;
+    letter-spacing: 2px;
+    color: $color-body;
+    font-family: $font-body;
+    border: 1px solid $color-body;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+}
