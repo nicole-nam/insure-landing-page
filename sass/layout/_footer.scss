@@ -1,5 +1,15 @@
 .footer {
   background-color: $color-body;
+  position: relative;
+  z-index: 10;
+
+  &::before {
+    content: url("../images/bg-pattern-footer-mobile.svg");
+    position: absolute;
+    top: -0;
+    left: 0;
+    z-index: -1;
+  }
 
   &__logo-box {
     @include text-box;
@@ -12,7 +22,7 @@
   }
 
   &__icon {
-    padding-bottom: 2rem;
+    padding: 2rem 0;
     &:not(:last-child) {
       padding-right: 1.5rem;
     }
@@ -31,9 +41,9 @@
     }
   }
   &__list-item {
-      &:last-child{
+    &:last-child {
       padding-bottom: 3rem;
-      }
+    }
     &:not(:first-child) {
       padding-top: 2rem;
     }

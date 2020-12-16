@@ -133,6 +133,16 @@ body {
 
 .footer {
   background-color: #fafafa;
+  position: relative;
+  z-index: 10;
+}
+
+.footer::before {
+  content: url("../images/bg-pattern-footer-mobile.svg");
+  position: absolute;
+  top: -0;
+  left: 0;
+  z-index: -1;
 }
 
 .footer__logo-box {
@@ -152,7 +162,7 @@ body {
 }
 
 .footer__icon {
-  padding-bottom: 2rem;
+  padding: 2rem 0;
 }
 
 .footer__icon:not(:last-child) {
