@@ -6,9 +6,9 @@
   &::before {
     content: url("../images/bg-pattern-footer-mobile.svg");
     position: absolute;
-    top: -0;
-    left: 0;
+    top: 0;
     z-index: -1;
+
   }
 
   &__logo-box {

@@ -1,4 +1,128 @@
+//navigation
 .navigation {
+  &__checkbox {
+    display: none;
+  }
+
+  &__btn {
+    position: fixed;
+    top: 1.5rem;
+    right: 2rem;
+    border: 2px solid $color-primary-dark;
+    padding: 0.5rem 0.4rem 1rem;
+    z-index: 2000;
+  }
+
+  &__icon {
+    position: relative;
+    cursor: pointer;
+    &,
+    &::before,
+    &::after {
+      display: inline-block;
+      width: 2.3rem;
+      height: 2px;
+      background-color: $color-primary-dark;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+
+      transition: all .3s ease-in;
+    }
+
+    &::before {
+      top: -0.6rem;
+    }
+    &::after {
+      top: 0.6rem;
+    }
+  }
+
+  &__background {
+    background-color: $color-primary-dark;
+    z-index: 1000;
+    position: fixed;
+    top: 5.5rem;
+    height: 100vh;
+    width: 100%;
+
+    opacity: 0;
+    transition: all .3s ease-in;
+
+  }
+
+  &__nav {
+    height: 100vh;
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 1500;
+
+    opacity: 0;
+    width: 0;
+    transition: all .3s ease-in-out;
+
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__item {
+    margin-top: 2rem;
+  }
+
+  &__link,
+  &:link,
+  &:visited {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: $font-body;
+    font-weight: 700;
+    color: $color-heading;
+    padding: 1rem 14rem;
+    display: inline-block;
+
+    &:hover {
+      border: 1px solid $color-heading;
+    }
+  }
+
+  //functionality 
+
+  &__checkbox:checked ~ &__background {
+    opacity: 1;
+  }
+
+  &__checkbox:checked ~ &__nav {
+    opacity: 1;
+    min-width: 100%;
+  }
+
+
+//icon animation  
+  &__checkbox:checked ~ &__btn &__icon {
+    background-color:transparent;
+  }
+
+  &__checkbox:checked ~ &__btn &__icon::before {
+    top: 0;
+ transform: rotate(135deg);
+  }
+
+  &__checkbox:checked ~ &__btn &__icon::after {
+    top: 0;
+transform: rotate(-135deg);
+  }
+}
+
+//main logo
+.top {
   &__logo-box {
     display: inline-block;
     width: 50%;
