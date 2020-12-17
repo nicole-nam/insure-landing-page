@@ -30,7 +30,7 @@
       content: "";
       position: absolute;
 
-      transition: all .3s ease-in;
+      transition: all 0.3s ease-in;
     }
 
     &::before {
@@ -50,8 +50,13 @@
     width: 100%;
 
     opacity: 0;
-    transition: all .3s ease-in;
+    transition: all 0.3s ease-in;
 
+    &::after {
+      content: url("/images/bg-pattern-mobile-nav.svg");
+      position: absolute;
+      bottom: 0;
+    }
   }
 
   &__nav {
@@ -65,8 +70,7 @@
 
     opacity: 0;
     width: 0;
-    transition: all .3s ease-in-out;
-
+    transition: all 0.3s ease-in-out;
   }
 
   &__list {
@@ -93,7 +97,7 @@
     }
   }
 
-  //functionality 
+  //functionality
 
   &__checkbox:checked ~ &__background {
     opacity: 1;
@@ -104,20 +108,19 @@
     min-width: 100%;
   }
 
-
-//icon animation  
+  //icon animation
   &__checkbox:checked ~ &__btn &__icon {
-    background-color:transparent;
+    background-color: transparent;
   }
 
   &__checkbox:checked ~ &__btn &__icon::before {
     top: 0;
- transform: rotate(135deg);
+    transform: rotate(135deg);
   }
 
   &__checkbox:checked ~ &__btn &__icon::after {
     top: 0;
-transform: rotate(-135deg);
+    transform: rotate(-135deg);
   }
 }
 

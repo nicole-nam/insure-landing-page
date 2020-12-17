@@ -274,8 +274,8 @@ body {
 .navigation__icon::before, .navigation__icon::after {
   content: "";
   position: absolute;
-  -webkit-transition: all .3s ease-in;
-  transition: all .3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 .navigation__icon::before {
@@ -294,8 +294,14 @@ body {
   height: 100vh;
   width: 100%;
   opacity: 0;
-  -webkit-transition: all .3s ease-in;
-  transition: all .3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.navigation__background::after {
+  content: url("/images/bg-pattern-mobile-nav.svg");
+  position: absolute;
+  bottom: 0;
 }
 
 .navigation__nav {
@@ -309,8 +315,8 @@ body {
   z-index: 1500;
   opacity: 0;
   width: 0;
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .navigation__list {
