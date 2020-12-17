@@ -79,6 +79,8 @@
 
   &__item {
     margin-top: 2rem;
+    font-size: 2rem;
+
   }
 
   &__link,
@@ -89,9 +91,8 @@
     font-family: $font-body;
     font-weight: 700;
     color: $color-heading;
-    padding: 1rem 14rem;
     display: inline-block;
-
+padding: 1rem 10rem;
     &:hover {
       border: 1px solid $color-heading;
     }

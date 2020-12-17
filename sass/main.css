@@ -325,6 +325,7 @@ body {
 
 .navigation__item {
   margin-top: 2rem;
+  font-size: 2rem;
 }
 
 .navigation__link, .navigation:link, .navigation:visited {
@@ -333,8 +334,8 @@ body {
   font-family: "Karla", sans-serif;
   font-weight: 700;
   color: #fafafa;
-  padding: 1rem 14rem;
   display: inline-block;
+  padding: 1rem 10rem;
 }
 
 .navigation__link:hover, .navigation:link:hover, .navigation:visited:hover {
