@@ -19,3 +19,26 @@
   padding: 8rem 2.5rem;
   text-align: center;
 }
+
+//breakpoints
+$breakpoints-up: (
+  "medium": "425px",
+  "large" :"1440px"
+);
+
+$breakpoints-down: (
+  "small": "424px",
+  "medium": "1439px"
+);
+
+@mixin breakpoint-up($size){
+  @media(min-width: map-get($breakpoints-up, $size)){
+    @content;
+  }
+}
+
+@mixin breakpoint-down($size){
+  @media(min-width: map-get($breakpoints-down, $size)){
+    @content;
+  }
+}

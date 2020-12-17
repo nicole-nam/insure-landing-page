@@ -10,5 +10,10 @@
     border: 1px solid $color-body;
     text-decoration: none;
     text-transform: uppercase;
+
+    @include breakpoint-up(large) {
+      margin-left: 0;
+      padding: 1rem 3rem;
+    }
   }
 }
