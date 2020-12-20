@@ -1,176 +1,177 @@
 //navigation
 .navigation {
-  &__checkbox {
-    display: none;
-  }
-
-  &__btn {
-    position: fixed;
-    top: 1.5rem;
-    right: 2rem;
-    border: 2px solid $color-primary-dark;
-    padding: 0.5rem 0.4rem 1rem;
-    z-index: 2000;
-
-    @include breakpoint-up(large) {
+    &__checkbox {
       display: none;
     }
-  }
-
-  &__icon {
-    position: relative;
-    cursor: pointer;
-    &,
-    &::before,
-    &::after {
-      display: inline-block;
-      width: 2.3rem;
-      height: 2px;
-      background-color: $color-primary-dark;
-    }
-
-    &::before,
-    &::after {
-      content: "";
-      position: absolute;
-
-      transition: all 0.3s ease-in;
-    }
-
-    &::before {
-      top: -0.6rem;
-    }
-    &::after {
-      top: 0.6rem;
-    }
-
-    @include breakpoint-up(large) {
-      display: none;
-    }
-  }
-
-  &__background {
-    background-color: $color-primary-dark;
-    z-index: 1000;
-    position: fixed;
-    top: 5.5rem;
-    height: 100vh;
-    width: 100%;
-
-    opacity: 0;
-    transition: all 0.3s ease-in;
-
-    &::after {
-      content: url("/images/bg-pattern-mobile-nav.svg");
-      position: absolute;
-      bottom: 0;
-    }
-  }
-
-  &__nav {
-    height: 100vh;
-    position: fixed;
-    top: 10%;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-    z-index: 1500;
-
-    opacity: 0;
-    width: 0;
-    transition: all 0.3s ease-in-out;
-
-    @include breakpoint-up(large) {
-      opacity: 1;
-      width: 100%;
-      top: 0;
-      right: 0;
-      transition: none;
-    }
-  }
-
-  &__list {
-    list-style: none;
-
-    @include breakpoint-up(large) {
-      display: flex;
-      justify-content: flex-end;
-      margin-right: 8rem;
-    }
-  }
-
-  &__item {
-    margin-top: 2rem;
-    font-size: 2rem;
-  }
-
-  &__link,
-  &:link,
-  &:visited {
-    text-decoration: none;
-    text-transform: uppercase;
-    font-family: $font-body;
-    font-weight: 700;
-    color: $color-heading;
-    display: inline-block;
-    padding: 1rem 10rem;
-    &:hover {
-      border: 1px solid $color-heading;
-
-
+  
+    &__btn {
+      position: fixed;
+      top: 1.5rem;
+      right: 2rem;
+      border: 2px solid $color-primary-dark;
+      padding: 0.5rem 0.4rem 1rem;
+      z-index: 2000;
+      background-color: #fff;
+  
       @include breakpoint-up(large) {
-        border: 1.5px solid $color-violet-light;
-        font-weight: 700;
+        display: none;
       }
     }
-
-    @include breakpoint-up(large) {
-      color: $color-violet-light;
-      font-weight: 400;
-      font-size: 1.2rem;
-      padding: 1rem 3rem;
+  
+    &__icon {
+      position: relative;
+      cursor: pointer;
+      &,
+      &::before,
+      &::after {
+        display: inline-block;
+        width: 2.3rem;
+        height: 2px;
+        background-color: $color-primary-dark;
+      }
+  
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+  
+        transition: all 0.3s ease-in;
+      }
+  
+      &::before {
+        top: -0.6rem;
+      }
+      &::after {
+        top: 0.6rem;
+      }
+  
+      @include breakpoint-up(large) {
+        display: none;
+      }
+    }
+  
+    &__background {
+      background-color: $color-primary-dark;
+      z-index: 1000;
+      position: fixed;
+      top: 5.5rem;
+      height: 100vh;
+      width: 100%;
+  
+      opacity: 0;
+      transition: all 0.3s ease-in;
+  
+      &::after {
+        content: url("/images/bg-pattern-mobile-nav.svg");
+        position: absolute;
+        bottom: 0;
+      }
+    }
+  
+    &__nav {
+      height: 100vh;
+      position: fixed;
+      top: 10%;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+      z-index: 1500;
+  
+      opacity: 0;
+      width: 0;
+      transition: all 0.3s ease-in-out;
+  
+      @include breakpoint-up(large) {
+        opacity: 1;
+        width: 100%;
+        top: 0;
+        right: 0;
+        transition: none;
+      }
+    }
+  
+    &__list {
+      list-style: none;
+  
+      @include breakpoint-up(large) {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 8rem;
+      }
+    }
+  
+    &__item {
+      margin-top: 2rem;
+      font-size: 2rem;
+    }
+  
+    &__link,
+    &:link,
+    &:visited {
+      text-decoration: none;
+      text-transform: uppercase;
+      font-family: $font-body;
+      font-weight: 700;
+      color: $color-heading;
+      display: inline-block;
+      padding: 1rem 10rem;
+      &:hover {
+        border: 1px solid $color-heading;
+  
+  
+        @include breakpoint-up(large) {
+          border: 1.5px solid $color-violet-light;
+          font-weight: 700;
+        }
+      }
+  
+      @include breakpoint-up(large) {
+        color: $color-violet-light;
+        font-weight: 400;
+        font-size: 1.2rem;
+        padding: 1rem 3rem;
+      }
+    }
+  
+    //functionality
+  
+    &__checkbox:checked ~ &__background {
+      opacity: 1;
+    }
+  
+    &__checkbox:checked ~ &__nav {
+      opacity: 1;
+      min-width: 100%;
+    }
+  
+    //icon animation
+    &__checkbox:checked ~ &__btn &__icon {
+      background-color: transparent;
+    }
+  
+    &__checkbox:checked ~ &__btn &__icon::before {
+      top: 0;
+      transform: rotate(135deg);
+    }
+  
+    &__checkbox:checked ~ &__btn &__icon::after {
+      top: 0;
+      transform: rotate(-135deg);
     }
   }
-
-  //functionality
-
-  &__checkbox:checked ~ &__background {
-    opacity: 1;
+  
+  //main logo
+  .top {
+    &__logo-box {
+      display: inline-block;
+      width: 50%;
+    }
+    &__logo {
+      width: 12rem;
+      padding: 2rem;
+    }
+  
+    @include breakpoint-up(large) {
+      padding: 1rem 10rem;
+    }
   }
-
-  &__checkbox:checked ~ &__nav {
-    opacity: 1;
-    min-width: 100%;
-  }
-
-  //icon animation
-  &__checkbox:checked ~ &__btn &__icon {
-    background-color: transparent;
-  }
-
-  &__checkbox:checked ~ &__btn &__icon::before {
-    top: 0;
-    transform: rotate(135deg);
-  }
-
-  &__checkbox:checked ~ &__btn &__icon::after {
-    top: 0;
-    transform: rotate(-135deg);
-  }
-}
-
-//main logo
-.top {
-  &__logo-box {
-    display: inline-block;
-    width: 50%;
-  }
-  &__logo {
-    width: 12rem;
-    padding: 2rem;
-  }
-
-  @include breakpoint-up(large) {
-    padding: 1rem 10rem;
-  }
-}

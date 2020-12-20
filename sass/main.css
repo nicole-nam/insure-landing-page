@@ -282,7 +282,7 @@ body {
   height: auto;
 }
 
-@media (min-width: 425px) {
+@media (min-width: 1440px) {
   .header__img {
     display: none;
   }
@@ -311,7 +311,7 @@ body {
     content: url("../images/image-intro-desktop.jpg");
     position: absolute;
     top: 20%;
-    left: 90%;
+    left: 100%;
     z-index: -10;
   }
 }
@@ -327,6 +327,7 @@ body {
   border: 2px solid #2d2640;
   padding: 0.5rem 0.4rem 1rem;
   z-index: 2000;
+  background-color: #fff;
 }
 
 @media (min-width: 1440px) {

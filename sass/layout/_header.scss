@@ -33,7 +33,7 @@
     width: 100%;
     height: auto;
 
-    @include breakpoint-up(medium) {
+    @include breakpoint-up(large) {
       display: none;
     }
   }
@@ -59,7 +59,7 @@
         content: url("../images/image-intro-desktop.jpg");
         position: absolute;
         top: 20%;
-        left: 90%;
+        left: 100%;
         z-index: -10;
       }
     }
