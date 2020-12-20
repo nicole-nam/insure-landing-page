@@ -74,10 +74,25 @@ body {
   border-bottom: 1px solid rgba(131, 125, 135, 0.4);
 }
 
+@media (min-width: 1440px) {
+  .heading-secondary::before {
+    margin: 3rem 0;
+    width: 8%;
+  }
+}
+
 .heading-tertiary {
   font-size: 2rem;
+  text-align: center;
   padding: 1rem;
   color: #2b272f;
+}
+
+@media (min-width: 1440px) {
+  .heading-tertiary {
+    padding-left: 0;
+    text-align: left;
+  }
 }
 
 .paragraph {
@@ -89,6 +104,12 @@ body {
   padding: 0 4rem 5rem;
   color: #837d87;
   line-height: 1.7;
+}
+
+@media (min-width: 1440px) {
+  .paragraph {
+    padding-left: 0;
+  }
 }
 
 .footer-title {
@@ -138,6 +159,13 @@ body {
   padding-bottom: 5rem;
 }
 
+@media (min-width: 1440px) {
+  .section-features__textbox {
+    text-align: left;
+    padding-left: 12rem;
+  }
+}
+
 .section-features__more {
   padding: 8rem 2.5rem;
   text-align: center;
@@ -154,6 +182,13 @@ body {
   top: 0;
   right: 0;
   z-index: -1;
+}
+
+@media (min-width: 1440px) {
+  .section-features__more {
+    margin-left: 12rem;
+    margin-right: 12rem;
+  }
 }
 
 .footer {
@@ -238,6 +273,17 @@ body {
   padding: 8rem 2.5rem;
   text-align: center;
   padding-top: 0;
+}
+
+@media (min-width: 1440px) {
+  .row {
+    text-align: left;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    padding: 0 12rem;
+  }
 }
 
 .header {
@@ -381,6 +427,12 @@ body {
   transition: all 0.3s ease-in;
 }
 
+@media (min-width: 1440px) {
+  .navigation__background {
+    height: 0;
+  }
+}
+
 .navigation__background::after {
   content: url("/images/bg-pattern-mobile-nav.svg");
   position: absolute;
@@ -388,7 +440,6 @@ body {
 }
 
 .navigation__nav {
-  height: 100vh;
   position: fixed;
   top: 10%;
   left: 50%;

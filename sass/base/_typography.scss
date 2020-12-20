@@ -2,18 +2,17 @@
   &--main {
     @include header-text;
     font-size: 4rem;
-    @include breakpoint-up(large){
+    @include breakpoint-up(large) {
       font-size: 6rem;
     }
-
   }
   &--sub {
     @include body-text;
 
-    @include breakpoint-up(large){
+    @include breakpoint-up(large) {
       padding-left: 0;
     }
-    @include breakpoint-up(large){
+    @include breakpoint-up(large) {
       font-size: 1.5rem;
     }
   }
@@ -31,20 +30,35 @@
     width: 35%;
     margin-bottom: 3rem;
     border-bottom: 1px solid rgba($color-violet-light, 0.4);
+
+    @include breakpoint-up(large) {
+      margin: 3rem 0;
+      width: 8%;
+    }
   }
 }
 .heading-tertiary {
   font-size: 2rem;
-
+  text-align: center;
   padding: 1rem;
   color: $color-secondary-dark;
+
+  @include breakpoint-up(large){
+    padding-left: 0;
+    text-align: left;
+  }
 }
+
 .paragraph {
   @include body-text;
   padding: 0 4rem 5rem;
   color: $color-violet-light;
   line-height: 1.7;
 
+  @include breakpoint-up(large) {
+    padding-left: 0;
+
+  }
 }
 
 .footer-title {
@@ -55,6 +69,4 @@
   letter-spacing: 1.2px;
   font-size: 1.3rem;
   padding: 2rem 0 3rem;
-
 }
-
