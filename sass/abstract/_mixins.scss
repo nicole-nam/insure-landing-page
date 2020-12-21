@@ -8,10 +8,10 @@
 }
 
 @mixin body-text {
-  color: $color-body;
+  color: $color-heading;
   font-family: $font-body;
   font-size: 1.2rem;
-  padding: 0rem .5rem;
+  padding: 0rem 0.5rem;
   font-weight: 400;
 }
 
@@ -23,22 +23,22 @@
 //breakpoints
 $breakpoints-up: (
   "medium": "425px",
-  "large" :"1440px"
+  "large": "1440px",
 );
 
 $breakpoints-down: (
   "small": "424px",
-  "medium": "1439px"
+  "medium": "1439px",
 );
 
-@mixin breakpoint-up($size){
-  @media(min-width: map-get($breakpoints-up, $size)){
+@mixin breakpoint-up($size) {
+  @media (min-width: map-get($breakpoints-up, $size)) {
     @content;
   }
 }
 
-@mixin breakpoint-down($size){
-  @media(min-width: map-get($breakpoints-down, $size)){
+@mixin breakpoint-down($size) {
+  @media (min-width: map-get($breakpoints-down, $size)) {
     @content;
   }
 }

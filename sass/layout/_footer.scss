@@ -1,11 +1,10 @@
 .footer {
-  background-color: $color-body;
+  background-color: $color-heading;
   position: relative;
   z-index: 10;
 
   &__box-1 {
     @include breakpoint-up(large) {
-
       display: flex;
       justify-content: space-between;
       border-bottom: 1px solid rgba($color-violet-light, 0.4);
@@ -44,18 +43,22 @@
     &:not(:last-child) {
       padding-right: 1.5rem;
     }
+    &:hover {
+      filter: brightness(50%);
+    }
   }
 
   &__links {
-    @include breakpoint-up(large){
+    @include breakpoint-up(large) {
       margin-left: 12rem;
+      padding-bottom: 5rem;
     }
   }
 
   &__link-box {
     text-align: center;
 
-    @include breakpoint-up(large){
+    @include breakpoint-up(large) {
       text-align: left;
     }
 
@@ -73,7 +76,6 @@
     }
   }
   &__list-item {
-
     list-style: none;
     &:last-child {
       padding-bottom: 3rem;
@@ -87,6 +89,7 @@
     display: inline-block;
     transition: all 0.3s ease-in-out;
 
+
     &:link,
     &:visited {
       font-family: $font-body;
@@ -96,9 +99,13 @@
       font-size: 1.2rem;
       letter-spacing: 1.2px;
       text-transform: uppercase;
-    }
-    &:hover {
-      text-decoration: underline;
+
+      &:hover {
+        text-decoration: underline;
+        text-decoration-color: $color-primary-dark;
+      }
     }
   }
+
 }
+
