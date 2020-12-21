@@ -108,8 +108,6 @@
     font-size: 2rem;
   }
 
-
-
   &__link,
   &:link,
   &:visited {
@@ -120,6 +118,7 @@
     color: $color-heading;
     display: inline-block;
     padding: 1rem 10rem;
+    transition: all .5s;
 
     @include breakpoint-up(large) {
       color: $color-violet-light;
