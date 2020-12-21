@@ -108,6 +108,8 @@
     font-size: 2rem;
   }
 
+
+
   &__link,
   &:link,
   &:visited {
@@ -119,7 +121,6 @@
     display: inline-block;
     padding: 1rem 10rem;
 
-
     @include breakpoint-up(large) {
       color: $color-violet-light;
       font-weight: 400;
@@ -127,16 +128,23 @@
       padding: 1rem 3rem;
 
       &:hover {
-        border: 1.5px solid $color-violet-light;
+        color: $color-primary-dark;
       }
-
     }
   }
 
-  #navigation-last:hover{
-    background-color: $color-primary-dark;
-
+  #last-item-background {
+    &:hover {
+      background-color: $color-primary-dark;
+    }
   }
+
+  #last-item-color {
+    &:hover {
+      color: $color-heading;
+    }
+  }
+
   //functionality
 
   &__checkbox:checked ~ &__background {

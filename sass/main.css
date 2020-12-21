@@ -597,12 +597,16 @@ body {
     padding: 1rem 3rem;
   }
   .navigation__link:hover, .navigation:link:hover, .navigation:visited:hover {
-    border: 1.5px solid #837d87;
+    color: #2d2640;
   }
 }
 
-.navigation #navigation-last:hover {
+.navigation #last-item-background:hover {
   background-color: #2d2640;
+}
+
+.navigation #last-item-color:hover {
+  color: #fafafa;
 }
 
 .navigation__checkbox:checked ~ .navigation__background {
