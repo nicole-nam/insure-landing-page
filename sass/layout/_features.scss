@@ -1,6 +1,9 @@
 .section-features {
     padding-bottom: 10rem;
 
+    @include breakpoint-up(large){
+      padding-top: 15rem;
+    }
    
   &__textbox {
     @include text-box;
@@ -29,6 +32,14 @@
 @include breakpoint-up(large){
   margin-left: 12rem;
   margin-right: 12rem;
+  padding-bottom:13rem;
+  padding-top: 4rem;
+
+  &::before{
+    content: url("/images/bg-pattern-how-we-work-desktop.svg");
+
+
+  }
 
 }
 

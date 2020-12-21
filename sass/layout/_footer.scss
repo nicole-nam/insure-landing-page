@@ -3,6 +3,14 @@
   position: relative;
   z-index: 10;
 
+
+&__box-1{
+@include breakpoint-up(large){
+display: flex;
+justify-content: space-between;
+}
+}
+
   &::before {
     content: url("../images/bg-pattern-footer-mobile.svg");
     position: absolute;
@@ -14,11 +22,22 @@
   &__logo-box {
     @include text-box;
     padding-bottom: 2rem;
+
+    @include breakpoint-up(large){
+     padding-left: 14.5rem;
+    }
+
+  
   }
   &__icon-box {
     list-style-type: none;
     display: flex;
     justify-content: center;
+
+    @include breakpoint-up(large){
+      align-items: flex-end;
+      padding-right: 14.5rem;
+    }
   }
 
   &__icon {

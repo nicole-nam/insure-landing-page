@@ -1,4 +1,15 @@
 .heading-primary {
+
+  &--feature{
+      @include breakpoint-up(large){
+        float: left;
+        width: 49%;
+        text-align:left;
+        margin-left: 5rem;
+  }
+  }
+
+
   &--main {
     @include header-text;
     font-size: 4rem;
@@ -11,8 +22,6 @@
 
     @include breakpoint-up(large) {
       padding-left: 0;
-    }
-    @include breakpoint-up(large) {
       font-size: 1.5rem;
     }
   }
@@ -43,7 +52,7 @@
   padding: 1rem;
   color: $color-secondary-dark;
 
-  @include breakpoint-up(large){
+  @include breakpoint-up(large) {
     padding-left: 0;
     text-align: left;
   }
@@ -57,7 +66,6 @@
 
   @include breakpoint-up(large) {
     padding-left: 0;
-
   }
 }
 
