@@ -209,7 +209,7 @@ body {
     padding-top: 4rem;
   }
   .section-features__more::before {
-    content: url("/images/bg-pattern-how-we-work-desktop.svg");
+    content: url("../images/bg-pattern-how-we-work-desktop.svg");
   }
 }
 
