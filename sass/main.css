@@ -9,6 +9,8 @@
 
 html {
   font-size: 62.5%;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 body {
@@ -555,6 +557,7 @@ body {
     right: 0;
     -webkit-transition: none;
     transition: none;
+    max-width: 1440px;
   }
 }
 
@@ -587,8 +590,8 @@ body {
   color: #fafafa;
   display: inline-block;
   padding: 1rem 10rem;
-  -webkit-transition: all .5s;
-  transition: all .5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 @media (min-width: 1440px) {

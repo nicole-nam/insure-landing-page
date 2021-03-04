@@ -90,6 +90,7 @@
       top: 0;
       right: 0;
       transition: none;
+      max-width: 1440px;
     }
   }
 
@@ -118,7 +119,7 @@
     color: $color-heading;
     display: inline-block;
     padding: 1rem 10rem;
-    transition: all .5s;
+    transition: all 0.5s;
 
     @include breakpoint-up(large) {
       color: $color-violet-light;

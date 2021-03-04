@@ -1,17 +1,18 @@
 *,
 *::before,
 *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
 
 html {
-    font-size: 62.5%; //10px
+  font-size: 62.5%; //10px
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
-body{
-    box-sizing: border-box;
-    line-height: 1.2;
-    
+body {
+  box-sizing: border-box;
+  line-height: 1.2;
 }
