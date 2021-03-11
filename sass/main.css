@@ -235,13 +235,6 @@ body {
   }
 }
 
-.footer::before {
-  content: url("../images/bg-pattern-footer-mobile.svg");
-  position: absolute;
-  top: 0;
-  z-index: -1;
-}
-
 .footer__logo-box {
   padding: 8rem 2.5rem;
   text-align: center;
@@ -517,7 +510,6 @@ body {
   position: fixed;
   top: 0;
   height: 100vh;
-  width: 100%;
   opacity: 0;
   -webkit-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
@@ -582,7 +574,7 @@ body {
   font-family: "Karla", sans-serif;
   font-weight: 700;
   color: #fafafa;
-  padding: 1rem 10rem;
+  padding: 1rem;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
@@ -609,6 +601,7 @@ body {
 
 .navigation__checkbox:checked ~ .navigation__background {
   opacity: 1;
+  width: 100%;
 }
 
 .navigation__checkbox:checked ~ .navigation__nav {

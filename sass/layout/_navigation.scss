@@ -54,9 +54,8 @@
     background-color: $color-primary-dark;
     z-index: 1000;
     position: fixed;
-    top:0;
+    top: 0;
     height: 100vh;
-    width: 100%;
 
     opacity: 0;
     transition: all 0.3s ease-in;
@@ -64,7 +63,6 @@
     @include breakpoint-up(large) {
       height: 0;
     }
-
   }
 
   &__nav {
@@ -112,7 +110,7 @@
     font-family: $font-body;
     font-weight: 700;
     color: $color-heading;
-    padding: 1rem 10rem;
+    padding: 1rem;
     transition: all 0.5s;
 
     @include breakpoint-up(large) {
@@ -143,6 +141,7 @@
 
   &__checkbox:checked ~ &__background {
     opacity: 1;
+    width: 100%;
   }
 
   &__checkbox:checked ~ &__nav {
@@ -154,7 +153,6 @@
   &__checkbox:checked ~ &__btn &__icon {
     background-color: transparent;
   }
-
 
   &__checkbox:checked ~ &__btn &__icon::before {
     top: 0;

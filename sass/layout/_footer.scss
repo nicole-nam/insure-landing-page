@@ -13,13 +13,6 @@
     }
   }
 
-  &::before {
-    content: url("../images/bg-pattern-footer-mobile.svg");
-    position: absolute;
-    top: 0;
-    z-index: -1;
-  }
-
   &__logo-box {
     @include text-box;
     padding-bottom: 2rem;
@@ -89,7 +82,6 @@
     display: inline-block;
     transition: all 0.3s ease-in-out;
 
-
     &:link,
     &:visited {
       font-family: $font-body;
@@ -106,6 +98,4 @@
       }
     }
   }
-
 }
-
